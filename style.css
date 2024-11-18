@@ -1,0 +1,696 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#navbar {
+    height: 100px;
+    width: 100%;
+    background-color: #052B50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+#navbar img {
+    height: 100px;
+}
+
+#navbar .center {
+    display: flex;
+    align-items: center;
+}
+
+#navbar .center h4 {
+    padding: 0 50px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+#navbar .rigth i {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.ri-menu-line {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: white;
+    color: #000;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #00253B;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 90vh;
+    position: relative;
+    background-color: #00253B;
+
+}
+
+#page1 #video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#page1 #video iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#page1 #overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00253b8a;
+}
+
+#page1 #overlay img {
+    height: 28vh;
+}
+
+#page1 #overlay h4 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 40%;
+    padding-top: 50px;
+    /* padding-bottom: 200px; */
+}
+
+#page1 #overlay .button {
+    display: flex;
+}
+
+#page1 #overlay h3 {
+    padding: 10px 40px;
+    margin: 50px 30px;
+    background-color: #EDC054;
+    color: black;
+}
+
+#page2 {
+    background-color: white;
+    width: 87.5%;
+    height: 50vh;
+    margin: 40px 0;
+    position: relative;
+    display: flex;
+}
+
+#page2 #left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 #left img {
+    width: 80%;
+    height: 50%;
+
+}
+
+#page2 #right {
+    width: 70%;
+    height: 100%;
+    color: #003A63;
+}
+
+#page2 #right h1 {
+    padding: 0 10px;
+    padding-top: 50px;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#page2 #right h3 {
+    padding: 0 10px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#page2 #right p {
+    padding: 0 10px;
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#page3 {
+    width: 87.5%;
+    height: 90vh;
+    background-color: black;
+    display: flex;
+}
+
+#page3 img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+#page3 .overlay {
+    position: absolute;
+    color: white;
+    border-left: 2px solid red;
+    margin: 120px 30px;
+
+}
+
+#page3 .overlay h1 {
+    font-size: 4rem;
+    line-height: 100px;
+    padding-left: 30px;
+    transition: all ease 0.5s;
+
+}
+
+#page3 .overlay span {
+    background-color: #EDC054;
+    color: black;
+    padding: 2px 5px;
+}
+
+#page4 {
+    width: 87.5%;
+    height: 130vh;
+    background: url(https://provost.howard.edu/sites/provost.howard.edu/files/styles/large/public/2018-12/HowardU_Gate_JKnight_2970_100406.jpg?h=0c2904f9&itok=baKWjNNC);
+    background-position: center;
+    background-size: cover;
+    margin: 40px 0;
+}
+
+#page4 .content {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffcb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#page4 .content h1 {
+    font-size: 5rem;
+    color: #003A63;
+    font-weight: 500;
+    padding: 0 55px;
+}
+
+#page4 .content h1 span {
+    background-color: red;
+    color: white;
+    padding: 0 10px;
+    font-weight: 900;
+}
+
+#page4 #professor {
+    width: 98%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+#page4 #professor .left {
+    width: 30%;
+    height: 80%;
+    margin-right: 20px;
+}
+
+#page4 #professor .left .top {
+    width: 100%;
+    height: 85%;
+    background: url(https://thedig.howard.edu/sites/thedig.howard.edu/files/styles/dig_500_x_500/public/2023-01/CamerynBurnette_0.JPG?h=b791fc50&itok=hB7Sejet);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#page4 #professor .left .top .name {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.326);
+}
+
+#page4 #professor .left .top h2 {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    font-size: 2.2rem;
+}
+
+#page4 #professor .left .top p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+#page4 #professor .left .bottom {
+    height: 15%;
+    width: 100%;
+    background-color: #EDC054;
+    display: flex;
+    align-items: center;
+}
+
+#page4 #professor .left .bottom h4 {
+    font-size: 1.2rem;
+    margin: 0 20px;
+}
+
+#page4 #professor .left .bottom h4 i {
+    font-size: 1.7rem;
+}
+
+#page4 #professor .left .bottom:hover {
+    background-color: #052B50;
+    color: white;
+    cursor: pointer;
+}
+
+#page4 #professor .center {
+    width: 30%;
+    height: 80%;
+    margin-right: 20px;
+
+}
+
+#page4 #professor .center .top .name {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.279);
+}
+
+#page4 #professor .center .top {
+    width: 100%;
+    height: 85%;
+    background: url(https://thedig.howard.edu/sites/thedig.howard.edu/files/styles/dig_500_x_500/public/2023-03/IMG_0551.jpeg?h=48ab3d10&itok=XpWlRM4b);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#page4 #professor .center .top h2 {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    font-size: 2.2rem;
+}
+
+#page4 #professor .center .top p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+#page4 #professor .center .bottom {
+    height: 15%;
+    width: 100%;
+    background-color: #EDC054;
+    display: flex;
+    align-items: center;
+}
+
+#page4 #professor .center .bottom h4 {
+    font-size: 1.2rem;
+    margin: 0 20px;
+}
+
+#page4 #professor .center .bottom h4 i {
+    font-size: 1.7rem;
+}
+
+#page4 #professor .center .bottom:hover {
+    background-color: #052B50;
+    color: white;
+    cursor: pointer;
+}
+
+#page4 #professor .right {
+    width: 30%;
+    height: 80%;
+}
+
+#page4 #professor .right .top .name {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.286);
+}
+
+#page4 #professor .right .top {
+    width: 100%;
+    height: 85%;
+    background: url(https://thedig.howard.edu/sites/thedig.howard.edu/files/styles/dig_500_x_500/public/2022-07/726435main_grobinson_hires.jpg?h=54f5a07b&itok=MpjdIRhw);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#page4 #professor .right .top h2 {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    font-size: 2.2rem;
+}
+
+#page4 #professor .right .top p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+#page4 #professor .right .bottom {
+    height: 15%;
+    width: 100%;
+    background-color: #EDC054;
+    display: flex;
+    align-items: center;
+}
+
+#page4 #professor .right .bottom h4 {
+    font-size: 1.2rem;
+    margin: 0 20px;
+}
+
+#page4 #professor .right .bottom h4 i {
+    font-size: 1.7rem;
+}
+
+#page4 #professor .right .bottom:hover {
+    background-color: #052B50;
+    color: white;
+    cursor: pointer;
+}
+
+#page5 {
+    width: 87.5%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://howard.edu/sites/home.howard.edu/files/2019-02/Outcomes_Opportunities_2_Grayscale.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#page5 .overlay {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.788);
+    display: flex;
+}
+
+#page5 .overlay .left {
+    width: 55%;
+    height: 90vh;
+}
+
+#page5 .overlay .left .top {
+    height: 30vh;
+    width: 100%;
+    color: #052B50;
+    position: relative;
+}
+
+#page5 .overlay .left .top h4 {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10px;
+    padding-left: 20px;
+    margin-left: 30px;
+    border-left: 2px solid red;
+}
+
+#page5 .left .bottom {
+    width: 95%;
+    height: 50vh;
+    background: url(https://www.workers.org/wp-content/uploads/howarduniversityresist-678x381.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 20px 30px;
+    position: relative;
+}
+
+#page5 .left .bottom-overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.358);
+}
+
+#page5 .left .bottom-overlay h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+
+#page5 .overlay .right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#page5 .overlay .right img {
+    height: 40vh;
+    padding-bottom: 20px;
+}
+
+#page5 .overlay .right h1 {
+    color: #2A6EBB;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+#page5 .overlay .right p {
+    color: #003A63;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#page6 {
+    width: 87.5%;
+    height: 85vh;
+    background: url(https://imagez.tmz.com/image/04/o/2023/05/13/041fc9b2d19a4f82ab3e6f2f416ad8d3_md.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 40px 0;
+}
+
+#page6 .contant {
+    width: 100%;
+    height: 100%;
+    background-color: #003a636b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page6 .contant .box1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page6 .contant .box1 h4 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+#page6 .contant .box1 .line {
+    width: 25%;
+    height: 2px;
+    background-color: red;
+}
+
+#page6 .contant .box2 {
+    display: flex;
+    position: absolute;
+    bottom: 200px;
+}
+
+#page6 .contant .box2 h5 {
+    padding: 8px 30px;
+    color: #000;
+    background-color: #EDC054;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+#footer1 {
+    width: 100%;
+    height: 40vh;
+    background-color: #003A63;
+    display: flex;
+}
+
+#footer1 .left {
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+#footer1 .left img {
+    width: 50%;
+    height: 65%;
+
+}
+
+#footer1 .left .icon {
+    padding: 30px 0;
+}
+
+#footer1 .left .icon i {
+    font-size: 1.2rem;
+    padding: 7px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#footer1 .left .icon i:hover {
+    background-color: #000;
+    color: #fff;
+    border: 0.5px solid white;
+}
+
+#footer1 .right {
+    padding: 30px 10px;
+}
+
+#footer1 .line1,
+.line2,
+.line3 {
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 30px 0;
+}
+
+#footer1 .right h5 {
+    padding-right: 50px;
+}
+
+#footer2 {
+    width: 100%;
+    height: 50vh;
+    background-color: #031F33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer2 .line1 {
+    width: 20%;
+    height: 100%;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+#footer2 .line1 h5 {
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+#footer2 .line2 {
+    width: 30%;
+    height: 100%;
+}
+
+#footer2 .line2 h5 {
+    color: rgba(255, 255, 255, 0.359);
+    font-weight: 500;
+}
+
+#footer2 .line3 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+
+#footer2 .line3 h2 {
+    font-size: 1.3rem;
+    color: #2A6EBB;
+    padding-bottom: 10px;
+}
+
+#footer2 h3 {
+    font-size: 1.1rem;
+}
+
+#footer2 h4 {
+    font-weight: 100;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+
+#footer2 .line4 {
+    width: 30%;
+    height: 100%;
+    color: white;
+    padding-top: 50px;
+}
